@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => buildHTML());
 
-// setInterval(() => {
-// 	document.querySelectorAll('.coin-list-item').forEach(e => e.parentNode.removeChild(e));
-// 	getData();
-// }, 60000);
+// Fetch new data every minute and update the UI
+setInterval(() => {
+	document.querySelectorAll('.coin-list-item').forEach(e => e.parentNode.removeChild(e));
+	getData();
+}, 60000);
 
 let coins;
 
