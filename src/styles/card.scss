@@ -1,0 +1,70 @@
+.coin-card {
+	border-radius: 5px;
+	box-shadow: 0 0 0 1px #cac2d5;
+	cursor: pointer;
+	display: flex;
+	flex: 1 100%;
+	justify-content: space-between;
+	list-style: none;
+	margin: 20px;
+	padding: 20px;
+
+	&:hover {
+		box-shadow: 0 0 4px 0 rgba(46,62,72,.12), 0 4px 12px 0 rgba(46,62,72,.12);
+		transform: translateY(-1px);
+	}
+
+	@media (min-width: 640px) {
+		flex: 0 1 35%;
+	}
+
+	@media (min-width: 920px) {
+		flex: 0 1 24%;
+	}
+	
+	@media (min-width: 1280px) {
+		flex: 0 1 18%;
+	}
+
+	&__name-wrapper,
+	&__price-wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__name-wrapper {
+		padding-left: 35px;
+		position: relative;
+	}
+
+	&__image {
+		height: 25px;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		position: absolute;	
+		width: 25px;
+	}
+
+	&__name {
+		padding-bottom: 5px;
+	}
+
+	&__price-wrapper {
+		align-items: flex-end;
+	}
+
+	&__price {
+		padding-bottom: 5px;
+	}
+	
+	&__daily-rate {
+		&--red {
+			color: red;
+		}
+
+		&--green {
+			color: green;
+		}
+	}
+}

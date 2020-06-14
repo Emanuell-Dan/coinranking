@@ -7,7 +7,7 @@ const numberWithCommas = require('./helpers/numberWithCommas').default;
 
 document.addEventListener('DOMContentLoaded', () => buildHTML());
 
-//Fetch new data every minute and update the UI
+// Fetch new data every minute and update the UI
 setInterval(() => {
 	document.querySelectorAll('.coin-card').forEach(e => e.parentNode.removeChild(e));
 	fetchData();

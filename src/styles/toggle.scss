@@ -1,0 +1,55 @@
+.toggle {
+	$p: &;
+
+	align-items: center;
+	display: flex;
+	justify-content: center;
+
+	&__text {
+		padding-right: 20px;
+	}
+
+	&__label {
+		height: 34px;
+		position: relative;
+		width: 60px;
+	}
+
+	&__input {
+		&:checked + #{$p}__slider {
+			background-color: grey;
+			border: 1px solid grey;
+		}
+
+		&:checked + #{$p}__slider::before {
+			transform: translate(-29px, -50%);
+		}
+	}
+
+	&__slider {
+		background-color: green;
+		border: 1px solid green;
+		border-radius: 34px;
+		bottom: 0;
+		cursor: pointer;
+		left: -2px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		transition: .4s;
+
+		&::before {
+			background-color: white;
+			border: 1px solid white;
+			border-radius: 50%;
+			content: "";
+			position: absolute;
+			height: 28px;
+			right: 1px;
+			top: 50%;
+			transform: translateY(-50%);
+			transition: .4s;
+			width: 26px;
+		}
+	}
+}

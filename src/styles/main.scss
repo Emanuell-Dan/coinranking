@@ -1,0 +1,25 @@
+/* Resets */
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+
+h1, h2, h3, p, ul {
+	margin: 0;
+}
+/* Resets */
+
+@import 'toggle';
+@import 'card';
+@import 'modal';
+
+.heading {
+	padding: 20px;
+	text-align: center;
+}
+
+.coin-card-wrapper {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
