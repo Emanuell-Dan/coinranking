@@ -1,0 +1,29 @@
+{
+  "author": "Emanuell-Dan Minciu",
+  "repository": "https://github.com/Emanuell-Dan/coinranking.git",
+  "license": "MIT",
+  "name": "coinranking",
+  "description": "A crypto exchange exercise which explores the Coinranking API",
+  "main": "main.js",
+  "scripts": {
+    "clean": "rm dist/bundle.js",
+    "dev": "parcel index.html",
+    "test": "jest src/tests/",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "body-scroll-toggle": "^0.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "babel-jest": "^26.0.1",
+    "babel-plugin-rewire": "^1.2.0",
+    "fetch-mock": "^9.10.1",
+    "import-fresh": "^3.2.1",
+    "jest": "^26.0.1",
+    "node-fetch": "^2.6.0",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.8"
+  }
+}
